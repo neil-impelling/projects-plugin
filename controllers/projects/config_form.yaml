@@ -6,25 +6,25 @@
 name: Project
 
 # Model Form Field configuration
-form: $/ncarps/projects/models/project/fields.yaml
+form: $/impelling/projects/models/project/fields.yaml
 
 # Model Class name
-modelClass: Ncarps\Projects\Models\Project
+modelClass: Impelling\Projects\Models\Project
 
 # Default redirect location
-defaultRedirect: ncarps/projects/projects
+defaultRedirect: impelling/projects/projects
 
 # Create page
 create:
     title: backend::lang.form.create_title
-    redirect: ncarps/projects/projects/update/:id
-    redirectClose: ncarps/projects/projects
+    redirect: impelling/projects/projects/update/:id
+    redirectClose: impelling/projects/projects
 
 # Update page
 update:
     title: backend::lang.form.update_title
-    redirect: ncarps/projects/projects
-    redirectClose: ncarps/projects/projects
+    redirect: impelling/projects/projects
+    redirectClose: impelling/projects/projects
 
 # Preview page
 preview:

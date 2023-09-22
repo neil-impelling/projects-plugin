@@ -3,3 +3,4 @@ v1.0.1:
   - create_projects_table.php
   - create_tasks_table.php
   - create_records_table.php
+  - create_access_tokens_table.php

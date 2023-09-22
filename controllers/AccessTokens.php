@@ -4,11 +4,11 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Records Backend Controller
+ * Access Tokens Backend Controller
  *
  * @link https://docs.octobercms.com/3.x/extend/system/controllers.html
  */
-class Records extends Controller
+class AccessTokens extends Controller
 {
     public $implement = [
         \Backend\Behaviors\FormController::class,
@@ -28,7 +28,7 @@ class Records extends Controller
     /**
      * @var array required permissions
      */
-    public $requiredPermissions = ['impelling.projects.records'];
+    public $requiredPermissions = ['impelling.projects.accesstokens'];
 
     /**
      * __construct the controller
@@ -37,6 +37,6 @@ class Records extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Impelling.Projects', 'projects', 'records');
+        BackendMenu::setContext('Impelling.Projects', 'projects', 'accesstokens');
     }
 }

@@ -1,4 +1,4 @@
-<?php namespace Ncarps\Projects;
+<?php namespace Impelling\Projects;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name' => 'Projects',
             'description' => 'Time management for web projects',
-            'author' => 'Ncarps',
+            'author' => 'Impelling',
             'icon' => 'icon-leaf'
         ];
     }
@@ -47,7 +47,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Ncarps\Projects\Components\MyComponent' => 'myComponent',
+            'Impelling\Projects\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -59,7 +59,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'ncarps.projects.some_permission' => [
+            'impelling.projects.some_permission' => [
                 'tab' => 'Projects',
                 'label' => 'Some permission'
             ],
@@ -74,33 +74,40 @@ class Plugin extends PluginBase
         return [
             'projects' => [
                 'label' => 'Projects',
-                'url' => Backend::url('ncarps/projects/projects'),
+                'url' => Backend::url('impelling/projects/projects'),
                 'icon' => 'icon-leaf',
-                'permissions' => ['ncarps.projects.*'],
+                'permissions' => ['impelling.projects.*'],
                 'order' => 500,
-
+                
                 'sideMenu' => [
                     'projects' => [
                         'label' => 'Projects',
-                        'url' => Backend::url('ncarps/projects/projects'),
+                        'url' => Backend::url('impelling/projects/projects'),
                         'icon' => 'icon-leaf',
-                        'permissions' => ['ncarps.projects.*'],
+                        'permissions' => ['impelling.projects.*'],
                         'order' => 500,
                     ],
                     'tasks' => [
                         'label' => 'Tasks',
-                        'url' => Backend::url('ncarps/projects/tasks'),
+                        'url' => Backend::url('impelling/projects/tasks'),
                         'icon' => 'icon-leaf',
-                        'permissions' => ['ncarps.projects.*'],
-                        'order' => 500,
+                        'permissions' => ['impelling.projects.*'],
+                        'order' => 501,
                     ],
                     'records' => [
                         'label' => 'Records',
-                        'url' => Backend::url('ncarps/projects/records'),
+                        'url' => Backend::url('impelling/projects/records'),
                         'icon' => 'icon-leaf',
-                        'permissions' => ['ncarps.projects.*'],
-                        'order' => 500,
+                        'permissions' => ['impelling.projects.*'],
+                        'order' => 502,
                     ],
+                    'access_tokens' => [
+                        'label' => 'Access Tokens',
+                        'url' => Backend::url('impelling/projects/accesstokens'),
+                        'icon' => 'icon-lock',
+                        'permissions' => ['impelling.projects.*'],
+                        'order' => 503
+                    ]
                 ]
             ],
         ];

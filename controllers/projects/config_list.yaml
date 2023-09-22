@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/ncarps/projects/models/project/columns.yaml
+list: $/impelling/projects/models/project/columns.yaml
 
 # Model Class name
-modelClass: Ncarps\Projects\Models\Project
+modelClass: Impelling\Projects\Models\Project
 
 # List Title
 title: Manage Projects
 
 # Link URL for each record
-recordUrl: ncarps/projects/projects/update/:id
+recordUrl: impelling/projects/projects/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

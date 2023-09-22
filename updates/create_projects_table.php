@@ -1,4 +1,4 @@
-<?php namespace Ncarps\Projects\Updates;
+<?php namespace Impelling\Projects\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
@@ -16,7 +16,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ncarps_projects_projects', function(Blueprint $table) {
+        Schema::create('impelling_projects_projects', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name')->nullable();
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ncarps_projects_projects');
+        Schema::dropIfExists('impelling_projects_projects');
     }
 };

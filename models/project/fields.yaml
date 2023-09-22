@@ -9,6 +9,11 @@ fields:
         span: row
         cssClass: col-md-12
 
+    api_id@update:
+        label: Api ID
+        span: row
+        cssClass: col-md-12
+
     allowance:
         label: Budget
         type: number
@@ -22,5 +27,10 @@ fields:
         comment: Hourly rate to charge client
         span: row
         cssClass: col-md-6
+
+    access_token:
+        label: Access Token
+        type: partial
+        path: $/impelling/projects/models/project/fields/_access_token.htm
         
 

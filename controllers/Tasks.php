@@ -1,4 +1,4 @@
-<?php namespace Ncarps\Projects\Controllers;
+<?php namespace Impelling\Projects\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -28,7 +28,7 @@ class Tasks extends Controller
     /**
      * @var array required permissions
      */
-    public $requiredPermissions = ['ncarps.projects.tasks'];
+    public $requiredPermissions = ['impelling.projects.tasks'];
 
     /**
      * __construct the controller
@@ -37,6 +37,6 @@ class Tasks extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Ncarps.Projects', 'projects', 'tasks');
+        BackendMenu::setContext('Impelling.Projects', 'projects', 'tasks');
     }
 }
